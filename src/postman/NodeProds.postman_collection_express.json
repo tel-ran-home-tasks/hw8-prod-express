@@ -229,6 +229,106 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "AddSupplier",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetSuppliers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsBySupplierId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/suppliers/products?supId=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"suppliers",
+						"products"
+					],
+					"query": [
+						{
+							"key": "supId",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSupplierById",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/suppliers/32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"suppliers",
+						"32"
+					],
+					"query": [
+						{
+							"key": "supId",
+							"value": "32",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindSuplierByQuery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/suppliers?supId=32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"suppliers"
+					],
+					"query": [
+						{
+							"key": "supId",
+							"value": "32"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
